@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+=================================
+USER NAME:          $TM_FULLNAME
+FILE NAME:          $TM_FILENAME
+ TAB SIZE:          $TM_TAB_SIZE
+SOFT TABS:          $TM_SOFT_TABS
+=================================
+
+${1/./=/g}
+Original: 
+${1:Hey, Joe!}
+Transformation: 
+${1/./=/g}
+
+
+
+Transformation: 
+${2/^(\w)|(?:_(\w))/(?2\u$2:)(?3 \u$3:)/g}
+      Original: 
+${2:text_in_snail_case}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>data</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
+
+ 

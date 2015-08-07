@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<!-- / ${1/(.*)/\U\1\E/i} / Form Input -->
+<div class="form-group">
+    {!! Form::label('${1}', '${2:${1/^(\w)/(?1\u$1:)/g}}:') !!}
+    {!! Form::input('date', '${1}', date('Y-m-d'), ['class' => 'form-control ${3:extraclass}']) !!}
+    <small class="text-danger">{{ \$errors->first('${1}') }}</small>
+</div>${0}
+]]></content>
+    <tabTrigger>dateinput</tabTrigger>
+</snippet>

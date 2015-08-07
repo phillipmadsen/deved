@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+    - map: /Users/sandbox/A_LOCAL/${2:sites}/${1:$TM_SELECTED_TEXT}
+      to: /home/vagrant/sites/${1:$TM_SELECTED_TEXT}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+<!-- 	<tabTrigger>map</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.html,text.html.laravel-blade, text.html.laravel-blade source.php.embedded.line, text.html.laravel-blade comment.block.laravel-blade, text.yaml</scope>
+	<!-- <scope>source.python</scope> -->
+</snippet>

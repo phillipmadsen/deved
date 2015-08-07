@@ -1,0 +1,76 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"repositories": [ {"type": "git", "url": "git@github.com:jamisonvalenta/Laravel-4-Generators.git"} ],
+	"license": "MIT",
+	"type": "project", 
+	"require": {
+		"laravel/framework": "5.0.*",
+        "illuminate/html": "~5.0",
+        "cartalyst/sentry": "dev-feature/laravel-5",
+        "intervention/image": "dev-master",
+        "mcamara/laravel-localization": "1.0.*",
+        "barryvdh/laravel-debugbar": "2.0.*@dev",
+        "barryvdh/laravel-ide-helper": "^2.0",
+        "cviebrock/eloquent-sluggable": "dev-master",
+        "davejamesmiller/laravel-breadcrumbs": "dev-master", 
+        "laracasts/flash": "~1.3",
+        "spatie/activitylog": "~2.0",
+    	"spatie/laravel-backup": "~2.2",
+    	"jenssegers/date": "^3.0",
+    	"simogeo/Filemanager": "^2.2",
+        "edvinaskrucas/notification": "5.*",
+        "laralib/l5scaffold": "^1.0",
+        "barryvdh/composer-cleanup-plugin": "0.1.x@dev",
+        "xethron/migrations-generator": "dev-l5",
+        "way/generators": "dev-feature/laravel-five-stable",
+        "devfactory/minify": "1.0.*",
+        "sseffa/video-api": "dev-master",
+		"vi-kon/laravel-db-exporter": "^1.0",
+		"nesbot/carbon": "^1.20",
+		"orangehill/iseed": "dev-master",
+		// "patricktalmadge/bootstrapper": "~5",
+		"torann/geoip": "0.2.*@dev"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"phpspec/phpspec": "~2.1",
+		"laracasts/generators": "^1.1",
+		"magyarjeti/laravel-lipsum": "dev-master",
+		"squizlabs/php_codesniffer": "*"
+	},
+	"autoload": {
+		"classmap": [
+			"database"
+		],
+		"psr-4": {
+			"Grace\\": "app/"
+		},
+        "files": [
+          "app/Helper/helpers.php"
+        ]
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php -r \"copy('.env.example', '.env');\"",
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
+}

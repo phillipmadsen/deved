@@ -1,0 +1,114 @@
+<snippet>
+	<content><![CDATA[
+folders:
+    - map: /Users/sandbox/A_LOCAL/sites/bennet.dev
+      to: /home/vagrant/sites/bennet.dev
+    - map: /Users/sandbox/A_LOCAL/sites/local.crud
+      to: /home/vagrant/sites/local.crud
+    - map: /Users/sandbox/A_LOCAL/local.repos/dev.grace
+      to: /home/vagrant/sites/dev.grace
+    - map: /Users/sandbox/A_LOCAL/sites/simple.dev
+      to: /home/vagrant/sites/simple.dev
+    - map: /Users/sandbox/A_LOCAL/sites/useradmin
+      to: /home/vagrant/sites/useradmin.dev
+    - map: /Users/sandbox/A_LOCAL/sites/boiler
+      to: /home/vagrant/sites/boiler
+    - map: /Users/sandbox/A_LOCAL/sites/starter.dev
+      to: /home/vagrant/sites/starter.dev
+    - map: /Users/sandbox/A_LOCAL/sites/fully.dev
+      to: /home/vagrant/sites/fully.dev
+    - map: /Users/sandbox/A_LOCAL/sites/josh.dev
+      to: /home/vagrant/sites/josh.dev
+    - map: /Users/sandbox/A_LOCAL/sites/cart.dev
+      to: /home/vagrant/sites/cart.dev
+    - map: /Users/sandbox/A_LOCAL/sites/intra.dev
+      to: /home/vagrant/sites/intra.dev
+    - map: /Users/sandbox/A_LOCAL/sites/shop.dev
+      to: /home/vagrant/sites/shop.dev
+    - map: /Users/sandbox/A_LOCAL/sites/software.dev
+      to: /home/vagrant/sites/software.dev
+    - map: /Users/sandbox/A_LOCAL/sites/administrator.dev
+      to: /home/vagrant/sites/administrator.dev
+    - map: /Users/sandbox/A_LOCAL/sites/bootstrap.dev
+      to: /home/vagrant/sites/bootstrap.dev
+    - map: /Users/sandbox/A_LOCAL/sites/base.local
+      to: /home/vagrant/sites/base.local
+    - map: /Users/sandbox/A_LOCAL/sites/setsup.local
+      to: /home/vagrant/sites/setsup.local
+    - map: /Users/sandbox/A_LOCAL/sites/local.jobs
+      to: /home/vagrant/sites/local.jobs
+ 
+sites:
+    - map: bennet.dev
+      to: /home/vagrant/sites/bennet.dev/public/
+    - map: local.crud
+      to: /home/vagrant/sites/local.crud/public/
+    - map: local.dev.grace
+      to: /home/vagrant/sites/dev.grace/public/
+    - map: simple.dev
+      to: /home/vagrant/sites/simple.dev/public/
+    - map: useradmin.dev
+      to: /home/vagrant/sites/useradmin.dev/public/
+    - map: boiler.dev
+      to: /home/vagrant/sites/boiler/public/
+    - map: starter.dev
+      to: /home/vagrant/sites/starter.dev/public/  
+    - map: fully.dev
+      to: /home/vagrant/sites/fully.dev/public/
+    - map: josh.dev
+      to: /home/vagrant/sites/josh.dev/public/
+    - map: cart.dev
+      to: /home/vagrant/sites/cart.dev/public/
+    - map: intra.dev
+      to: /home/vagrant/sites/intra.dev/public/
+    - map: shop.dev
+      to: /home/vagrant/sites/shop.dev/public/
+    - map: software.dev
+      to: /home/vagrant/sites/software.dev/public/
+    - map: administrator.dev
+      to: /home/vagrant/sites/administrator.dev/public/
+    - map: bootstrap.dev
+      to: /home/vagrant/sites/bootstrap.dev/public/
+    - map: base.local
+      to: /home/vagrant/sites/base.local/public/
+    - map: setsup.local
+      to: /home/vagrant/sites/setsup.local/public/
+    - map: local.jobs
+      to: /home/vagrant/sites/local.jobs/public/
+
+databases:
+    - homestead
+    - dev_grace
+    - grace_dev
+    - stage_grace
+    - admin
+    - laravel
+    - sximo
+    - boots
+    - simple
+    - useradmin
+    - html
+    - starter
+    - fully
+    - joshadmin
+    - cart
+    - intra
+    - shop
+    - software
+    - administrator
+    - bootstrap
+    - bennet
+    - dist
+    - setsup
+    - jobs
+    - crud
+
+variables:
+    - key: APP_ENV
+      value: local
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>myyaml</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

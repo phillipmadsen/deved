@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+<!-- / ${1/(.*)/\U\1\E/i} / Form Input -->
+<div class="form-group">
+    {!! Form::label('${1}', '${2:${1/^(\w)/(?1\u$1:)/g}}:') !!}
+	<div class="input-group"> {{-- <div class="input-group-addon"></div> --}}
+    {!! Form::text('${1}', null, ['class' => 'form-control ${3:extra classes}', 'placeholder' => '${4:${1}} goes here']) !!}
+	    <div class="input-group-addon">
+			<i class="livicon" data-name="info" data-size="18" data-loop="false" data-c="#428BCA" data-hc="#428BCA" title="view info" data-toggle="collapse" href="#openinfo${5:1}" aria-expanded="false" aria-controls="openinfo${5:1}"></i>
+		</div>
+	</div> {{-- / input-group end--}}
+    <div class="collapse" id="openinfo${5:1}">
+		<div class="well"><medium class="list-group-item list-group-item-info">${6:put info here} / ${7:SCHEMA: itemprop="${8:headline name}"}</medium>
+		</div>
+	</div>
+	<span id="helpBlock" class="help-block">
+	${9:A block of help text that breaks onto a new line and may extend beyond one line}. </span>
+    <small class="text-danger">{{ \$errors->first('${1}') }}</small>
+</div>${0} 
+<!-- / ${1/(.*)/\U\1\E/i} / END Form Input -->
+]]></content>
+    <tabTrigger>texttoggle</tabTrigger>
+    <description>l5 Form:textfield</description>
+</snippet> 

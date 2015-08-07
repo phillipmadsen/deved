@@ -1,0 +1,10 @@
+{
+   "scope": "text.html.laravel-blade, text.html.laravel-blade source.php.embedded.line, text.html.laravel-blade comment.block.laravel-blade, text.html, source.text",
+
+   "completions":
+   [
+      // { "trigger": "$table", "contents": "\$table->string('');" },
+      // { "trigger": "abbr\t<abbr>", "contents": "<abbr>$0</abbr>" },
+      // { "trigger": "acronym", "contents": "<acronym>$0</acronym>" }
+   ]
+}

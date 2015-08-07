@@ -1,0 +1,36 @@
+.toppadding-sm{padding-top:30px}
+.toppadding{padding-top:50px;}
+.bottompadding-sm{padding-bottom:30px}
+.bottompadding{padding-bottom:50px;}
+allpadding{padding:50px;}
+allpadding-sm{padding:30px;}
+.bgcolor-second{background-color:#B14949;}
+.col-centered{float:none;margin:0 auto;}
+.overlay-light{background-image:url('/image/grid-lihgt.png');}
+.button-secondary{background-color:#B14949;}
+.button:hover,.button-full:hover{text-decoration:none;}
+.compare{background-color:#F9F9F9;padding:20px 15px 5px 15px;}
+.feature-box{padding:0 0 0 110px;}
+.feature-box.fbox-right{padding:0 110px 0 0;text-align:right;}
+.feature-box .fbox-icon{width:100px;height:100px;}
+.feature-box .fbox-icon img{background-color:transparent;border:1px solid #48A0C4;}
+#content .feature-box p{line-height:1.4;color:rgb(85,85,85);}
+#page-title h2{padding:0;margin:0;line-height:1;font-weight:600;letter-spacing:1px;color:#333;font-size:28px;text-transform:uppercase;}
+#page-title span{display:block;margin-top:10px;font-weight:300;color:#777;font-size:18px;}
+.breadcrumb{position:absolute!important;width:auto!important;top:50%!important;left:auto!important;right:15px!important;margin:-10px 0 0 0!important;background-color:transparent!important;padding:0!important;font-size:12px;}
+.tagcloud a {
+	display: block;
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 3px 6px;
+	border: 1px solid #E5E5E5;
+	font-size: 13px!important;
+	color: #666;
+	border-radius: 2px;
+}
+.tagcloud a:hover {
+	border-color: #337ab7!important;
+	color: #337ab7!important;
+	text-decoration: none!important;
+}

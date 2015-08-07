@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<!-- / ${1/(.*)/\U\1\E/i} / Form Input -->
+<div class="form-group">
+    {!! Form::label('${1}', '${2:${1/^(\w)/(?1\u$1:)/g}}:') !!}
+    {!! Form::text('${1}', null, ['class' => 'form-control ${3:extraclasses}', 'placeholder' => '${4:${1}}']) !!}
+    <small class="text-danger">{{ \$errors->first('${1}') }}</small>
+</div>${0}
+]]></content>
+    <tabTrigger>textarea</tabTrigger>
+    <description>l5 Form:textfield</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\$table->${1:string('${3:title}${4:, 100}')}${2:integer('${5:title}'${6:, 11})};
+ts$7
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ts</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

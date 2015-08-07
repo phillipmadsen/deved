@@ -1,0 +1,78 @@
+.toppadding-sm{padding-top:30px}
+.toppadding{padding-top: 50px;}
+.bottompadding-sm{padding-bottom:30px}
+.bottompadding{padding-bottom: 50px;}
+allpadding{padding: 50px;}
+allpadding-sm{padding:30px;}
+.bgcolor-second{background-color:#B14949;}
+
+.col-centered{float:none; margin: 0 auto;}
+.overlay-light{background-image: url('/image/grid-lihgt.png');}
+
+.button-secondary{background-color:#B14949; }
+.button:hover, .button-full:hover{text-decoration: none;}
+
+
+.compare{background-color: #F9F9F9; padding: 20px 15px 5px 15px;}
+
+
+.feature-box {padding:0 0 0 110px;}
+.feature-box.fbox-right {
+	padding: 0 110px 0 0;
+	text-align: right;
+}
+.feature-box .fbox-icon {width: 100px; height: 100px;}
+.feature-box .fbox-icon img { background-color: transparent; border: 1px solid #48A0C4;}
+#content .feature-box p{line-height: 1.4; color:rgb(85,85,85);}
+
+
+#page-title h2 {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #333;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+
+[data-icon]:before {
+	font-family: icons; /* BYO icon font, mapped smartly */
+	content: attr(data-icon);
+	speak: none; /* Not to be trusted, but hey. */
+}
+.icon-alone {
+	display: inline-block; /* Chrome 19 was weird with clickability without this */
+}
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+
+.indent {
+    margin-left: 10px!important;
+}
+
+a.nobg img {
+    padding: 5px!important;
+}
+
+abbr[title], abbr[data-original-title] {
+    cursor: help;
+    border-bottom:none!important;
+}
+.livicon {
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: middle;
+  height: 18px!important;
+}
+.livicon.shadowed {
+  -webkit-filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25));
+  filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25));
+}
